@@ -1,2 +1,2 @@
-# publishing_platform_markdown
+# Publishing Platform Markdown
 Markdown extension library for the Publishing Platform.
