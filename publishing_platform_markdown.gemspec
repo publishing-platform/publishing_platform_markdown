@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0"
 
-  s.files = Dir[
+  spec.files = Dir[
     "lib/**/*",
     "README.md",
     "Gemfile",
@@ -20,10 +20,10 @@ Gem::Specification.new do |spec|
   ]
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = %w[lib]
 
   spec.add_dependency "kramdown", ">= 2.3.1", "< 2.4.1"
   spec.add_dependency "sanitize", "~> 6"
 
-  spec.add_development_dependency "publishing_platform_rubocop"  
+  spec.add_development_dependency "publishing_platform_rubocop"
 end
