@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Markup language for the Publishing Platform"
   spec.description = "Markup language for the Publishing Platform"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0"
+  spec.required_ruby_version = ">= 3.1"
 
   spec.files = Dir[
     "lib/**/*",
@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sanitize", "~> 6"
 
   spec.add_development_dependency "publishing_platform_rubocop"
+  spec.add_development_dependency "simplecov"
 end

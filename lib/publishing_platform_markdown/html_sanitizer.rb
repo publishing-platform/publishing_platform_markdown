@@ -1,11 +1,11 @@
 class PublishingPlatformMarkdown::HtmlSanitizer
-  def initialize(dirty_html, options = {})
+  def initialize(dirty_html, _options = {})
     @dirty_html = dirty_html
   end
 
   def sanitize(allowed_elements: [])
     Sanitize.fragment(@dirty_html, sanitize_config(allowed_elements:))
-  end  
+  end
 
   def sanitize_config(allowed_elements: [])
     # We purposefully disable style elements which Sanitize::Config::RELAXED allows
