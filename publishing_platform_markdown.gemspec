@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = %w[lib]
 
   spec.add_dependency "kramdown", ">= 2.3.1", "< 2.4.1"
-  spec.add_dependency "sanitize", "~> 6"
+  spec.add_dependency "sanitize", ">= 6", "< 8"
 
   spec.add_development_dependency "publishing_platform_rubocop"
   spec.add_development_dependency "simplecov"
