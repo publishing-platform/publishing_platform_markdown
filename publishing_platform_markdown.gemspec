@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib]
 
-  spec.add_dependency "kramdown", ">= 2.3.1", "< 2.4.1"
+  spec.add_dependency "kramdown", ">= 2.3.1", "< 2.5.2"
   spec.add_dependency "sanitize", ">= 6", "< 8"
 
   spec.add_development_dependency "publishing_platform_rubocop"
