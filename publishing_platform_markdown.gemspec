@@ -25,6 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "kramdown", ">= 2.3.1", "< 2.5.2"
   spec.add_dependency "sanitize", ">= 6", "< 8"
 
-  spec.add_development_dependency "publishing_platform_rubocop"
-  spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "publishing_platform_rubocop", "~> 0.2"
+  spec.add_development_dependency "simplecov", "~> 0.22"
 end
